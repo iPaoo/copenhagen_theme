@@ -1,15 +1,13 @@
-<h1 class="visibility-hidden">{{ help_center.name }}</h1>
+{{!-- <h1 class="visibility-hidden">{{ help_center.name }}</h1> --}}
 
-<section id="main-content" class="section hero">
-  <div class="hero-inner">
-    <h2 class="visibility-hidden">{{ t 'search' }}</h2>
-    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="search-icon" aria-hidden="true">
-      <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"/>
-      <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"/>
-    </svg>
-    {{search submit=false instant=settings.instant_search class='search search-full'}}
-  </div>
-</section>
+<div class="uk-section uk-section-default uk-section-xlarge uk-background-cover uk-flex uk-flex-middle uk-light" style="background-image: url(https://images.unsplash.com/photo-1590212151175-e58edd96185b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80)">
+   <div class="uk-width-1-1 uk-text-center"> 
+    <div class="uk-container uk-container-default">
+      <h1 class="uk-heading-large">{{ help_center.name }}</h1>
+      {{search submit=false instant=settings.instant_search class='search search-full uk-search uk-search-large'}}
+    </div>
+   </div>
+</div>
 
 <div class="container">
   <section class="section knowledge-base">
