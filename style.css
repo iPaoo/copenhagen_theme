@@ -599,11 +599,15 @@ ul {
   max-width: 1160px;
   margin: 0 auto;
   padding: 0 5%;
-  position: relative;
+  /* position: relative; */
   align-items: center;
   display: flex;
   height: 71px;
   justify-content: space-between;
+  /* Start Greg */
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 @media (min-width: 1160px) {
@@ -913,7 +917,7 @@ ul {
 
 .search input[type="search"] {
   border: 1px solid #ddd;
-  border-radius: 30px;
+  /* border-radius: 30px; */
   box-sizing: border-box;
   color: #666;
   height: 40px;
@@ -935,6 +939,8 @@ ul {
 
 .search-full input[type="search"] {
   border: 1px solid #fff;
+  /* Greg */
+  height: 60px;
 }
 
 .search-icon {
@@ -963,10 +969,12 @@ ul {
   background-image: url($homepage_background_image);
   background-position: center;
   background-size: cover;
-  height: 300px;
+  /* height: 300px; */
   padding: 0 20px;
   text-align: center;
   width: 100%;
+  /* Greg */
+  height: 100vh;
 }
 
 .hero-inner {
