@@ -11,7 +11,7 @@
         <div class="uk-width-1-2">
           {{#link 'help_center'}}{{help_center.name}}{{/link}}
         </div>
-        <div class="uk-width-1-2">
+        <div class="uk-width-1-2 uk-text-right">
           {{#if alternative_locales}}
             <a class="uk-button uk-button-default" href="#language-modal" uk-toggle>{{current_locale.name}}</a>
             <div id="language-modal" class="uk-modal-full" uk-modal>
@@ -41,7 +41,7 @@
 
 <script>
   $( document ).ready(function() {
-    $('form.search > input#query').addClass( "uk-search-input" );
+    $('form.search #query').addClass( "uk-search-input" );
     $('.search').prepend("<span uk-search-icon></span>");
   });
 </script>

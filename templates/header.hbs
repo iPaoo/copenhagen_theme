@@ -39,8 +39,8 @@
                 <li>{{link 'new_request' class='submit-a-request'}}</li>
                 {{#if signed_in}}
                   <li>
-                    {{!-- {{user_avatar class="uk-border-circle"}} --}}
-                    <a href="#">{{user_name}}</a>
+                    {{user_avatar class="user-avatar"}}
+                    <a href="#" class="uk-display-inline">{{user_name}}</a>
                     <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
                             <li>{{link "my_activities" role="menuitem"}}</li>
